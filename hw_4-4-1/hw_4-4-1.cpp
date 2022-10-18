@@ -50,16 +50,16 @@ int main()
 	std::cout << in.is_open() << " " << out.is_open();
 
 
-	std::string amount;
-	in >> amount;
-	out << amount;
+	int size = 0;
+	in >> size;
+	out << size;
 
 	std::string city;
 	std::string street;
 	int building = 0;
 	int flat = 0;
 
-	int size = 3;
+	//int size = 3;
 	Address* adr_arr = new Address[size];
 
 	for (int i = 0; i < 3; i++) {
